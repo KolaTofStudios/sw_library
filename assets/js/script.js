@@ -30,14 +30,31 @@ $(".close").click(function(){
 });
 });
 
+$("#answer1").click(function(){
+  swal("Good job!", "You answered correctly!", "success", {button: "Next Question",});
+});
+
+$("#answer").click(function(){
+  swal("Terrible job!", "You failed miserably!", "error", {button: "Retry",});
+});
+
+$("#answer2").click(function(){
+  swal("Terrible job!", "You failed miserably!", "error", {button: "Retry",});
+});
+
+$("#answer3").click(function(){
+  swal("Terrible job!", "You failed miserably!", "error", {button: "Retry",});
+});
+
+
 
 //kolichestvo tochki
-const numStars = 1500;
+const numStars = 3500;
 
 // namira random koordinati
 function getRandomPosition() {  
-  var y = $('body').width();;
-  var x = $('body').height();;
+  var y = $('html').width();
+  var x = $('body').height()*1.8;
     var randomX = Math.floor(Math.random()*x);
     var randomY = Math.floor(Math.random()*y);
     return [randomX,randomY];
@@ -53,7 +70,7 @@ for (let i = 0; i < numStars; i++) {
   document.body.append(star);
 }
 
-//smooth scroll function
+//smooth scroll funkciq
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
@@ -69,15 +86,34 @@ $(document).ready(function(){
   });
 });
 
-function changeCur(){
-  document.body.style.cursor="url(../img/tie.cur), auto";
-}
-
-$(document).on('click', function(event){
-  changeCur()
-  // $('body').css('cursor', 'url(../img/tie.cur), auto');
-  console.log("click")
+$(window).scroll(function() {
+  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(900);    // Fade in the arrow
+  } else {
+      $('#return-to-top').fadeOut(900);   // Else fade out the arrow
+  }
 });
 
+$('#return-to-top').click(function() {      
+  $('body,html').animate({
+      scrollTop : 0                      
+  }, 900);
+});
+
+$('.info').click(function() {      
+  $('body,html').animate({
+      scrollTop : 0                     
+  }, 900);
+});
+
+
+$(function(){
+  function show_body(){
+    $(".fall").css("display", "none");
+    $("#loader").fadeOut(900); 
+    $("#body").css("visibility", "visible");
+  };
+  window.setTimeout( show_body, 3000 ); 
+});
 
 

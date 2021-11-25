@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WF7JMCK');</script>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211584016-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-211584016-1');
+</script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="google-site-verification" content="oJ6P2nxF7ZsALtnkMR0Z6RbZM76CTqgywWiJqW__97s" />
+  <meta name="author" content="Kola Tof Studios">
+  <meta name="language" content="en" />  
+  
   <title>Lego Star Wars Library</title>
   <link rel="icon" href="./assets/svg/death-star.svg">
 
@@ -12,15 +33,31 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link href="./assets/css/fontawesome.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
-<body>
 
+<body id="body">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WF7JMCK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  <div id="loader">
+    <div class="row">
+      <div class="cell">
+        <div class="fall"><img src="./assets/svg/death-star-white.svg" style="max-width: 400px;" ></div>
+      </div>
+    </div>
+    </div>
+
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 <div id="top"></div>
 <div class="star"></div>
-<nav class="navbar bg-dark text-white">
+<nav class="navbar bg-dark">
   <div class="container">
       <a href="#"><img src="./assets/svg/death-star.svg" id="logo" alt=""></a>
     <ul class="nav-links d-flex m-0">
@@ -50,12 +87,16 @@
   <div id="info">
     <p class='close'><i class="far fa-times-circle"></i></p>
     <p class='question1'><i class="fas fa-question"></i></p><br>
-    <h2>WHAT TO DO?</h2><br><br><br>
-    <h3>INSTRUKCII</h3>
+    <h2>Who was Luke's sister?</h2><br><br><br>
+    <button id="answer2">Anakin</button>
+    <button id="answer1" name="leia">Padme</button>
+    <br><br>
+    <button id="answer3">Leia</button>
+    <button id="answer">Boba</button>
   </div>
 </div>
 
-  <a href="#top"><div class="info"><i class="fas fa-question"></i></div></a>
+  <a href="javascript:"><div class="info"><i class="fas fa-question"></i></div></a>
   <img src="./assets/svg/logo.svg" id="svg" >
   <h1 class="zaglavie">LEGO STAR WARS SETS <br> 2003 - 2020</h1><br><hr class="hr"><br><br><br>
     <div id="gallery" class="container-fluid"> 
@@ -78,27 +119,19 @@
               <figure> 
                 <img src="./assets/img/6.png" class="img-responsive">
           <button id="learn_more">Learn More</button>                </figure>
-                <figure> 
-                  <img src="./assets/img/7.png" class="img-responsive">
-            <button id="learn_more">Learn More</button>                  </figure>
-                  <figure> 
                     <img src="./assets/img/8.png" class="img-responsive">
               <button id="learn_more">Learn More</button>                    </figure>
                     <figure> 
                       <img src="./assets/img/9.png" class="img-responsive">
                 <button id="learn_more">Learn More</button>                      </figure>
-                      <figure> 
-                        <img src="./assets/img/10.png" class="img-responsive">
-                  <button id="learn_more">Learn More</button>                        </figure>
-                        <figure> 
                           <img src="./assets/img/11.png" class="img-responsive">
                     <button id="learn_more">Learn More</button>                          </figure>
                           <figure> 
                             <img src="./assets/img/12.png" class="img-responsive">
                       <button id="learn_more">Learn More</button>                            </figure>
-                            <!-- <figure> 
+                            <figure> 
                               <img src="./assets/img/13.png" class="img-responsive">
-                        <button id="learn_more">Learn More</button>                              </figure> -->
+                        <button id="learn_more">Learn More</button>                              </figure>
 
     </div>
 
