@@ -177,14 +177,6 @@ body {
   transform-origin: 50% 100%;
 }
 
-.navbar .menu-toggle {
-  display: none;
-}
-
-.nav-links .hide-toggle {
-  display: none;
-}
-
 #logo{
   max-height: 50px;
 }
@@ -453,6 +445,7 @@ figcaption{
   height: 50px;
   display: block;
   display: none;
+  visibility: visible;
 }
 
 #return-to-top i {
@@ -461,7 +454,7 @@ figcaption{
   position: relative;
   left: 16px;
   top: 13px;
-  font-size: 23px;
+  font-size: 123px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }

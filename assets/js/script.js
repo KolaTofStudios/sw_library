@@ -94,13 +94,14 @@ $(document).ready(function(){
   });
 });
 
-$(window).scroll(function() {
-  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-      $('#return-to-top').fadeIn(900);    // Fade in the arrow
-  } else {
-      $('#return-to-top').fadeOut(900);   // Else fade out the arrow
-  }
-});
+// $(window).scroll(function() {
+//   if ($(this).scrollTop() >= 50) {  
+//     console.log("scrolled")      
+//       $('#return-to-top').fadeIn(900);    
+//   } else {
+//       $('#return-to-top').fadeOut(900);   
+//   }
+// });
 
 $('#return-to-top').click(function() {      
   $('body,html').animate({
