@@ -33,7 +33,6 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link href="./assets/css/fontawesome.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -48,9 +47,10 @@
 
   <div id="loader">
     <div class="row">
-      <div class="cell">
-        <div class="fall"><img src="./assets/svg/death-star-white.svg" style="max-width: 400px;" ></div>
-      </div>
+        <div class="cell">
+          <div class="bounce-in-right"><img src="./assets/svg/death-star-white.svg" style="max-width: 400px;" alt=""></div>
+          <div class="bounce-in-left"><h1>SW LIBRARY</h1></div>
+        </div>
     </div>
     </div>
 
@@ -98,40 +98,54 @@
 
   <a href="javascript:"><div class="info"><i class="fas fa-question"></i></div></a>
   <img src="./assets/svg/logo.svg" id="svg" >
-  <h1 class="zaglavie">LEGO STAR WARS SETS <br> 2003 - 2020</h1><br><hr class="hr"><br><br><br>
+  <h1 class="header">LEGO STAR WARS SETS <br> 2003 - 2020</h1><br><hr class="hr"><br><br><br>
     <div id="gallery" class="container-fluid"> 
       <figure> 
-      <img src="./assets/img/1.png" class="img-responsive">
-<button id="learn_more">Learn More</button>      
+      <img src="./assets/img/1-min.png" class="img-responsive">
+<button onclick="info()" id="learn_more">Learn More</button>      
       </figure>
       <figure> 
-        <img src="./assets/img/2.png" class="img-responsive">
-  <button id="learn_more">Learn More</button>        </figure>
+        <img src="./assets/img/2-min.png" class="img-responsive">
+  <button onclick="info1()" id="learn_more">Learn More</button>        
+</figure>
         <figure> 
-          <img src="./assets/img/3.png" class="img-responsive">
-    <button id="learn_more">Learn More</button>          </figure>
+          <img src="./assets/img/3-min.png" class="img-responsive">
+    <button onclick="info2()" id="learn_more">Learn More</button>          
+  </figure>
           <figure> 
-            <img src="./assets/img/4.png" class="img-responsive">
-      <button id="learn_more">Learn More</button>            </figure>
+            <img src="./assets/img/4-min.png" style="max-height: 250px;" class="img-responsive">
+      <button onclick="info3()" id="learn_more">Learn More</button>            
+    </figure>
             <figure> 
-              <img src="./assets/img/5.png" class="img-responsive">
-        <button id="learn_more">Learn More</button>              </figure>
+              <img src="./assets/img/5-min.png" class="img-responsive">
+        <button onclick="info4()" id="learn_more">Learn More</button>              
+      </figure>
               <figure> 
-                <img src="./assets/img/6.png" class="img-responsive">
-          <button id="learn_more">Learn More</button>                </figure>
-                    <img src="./assets/img/8.png" class="img-responsive">
-              <button id="learn_more">Learn More</button>                    </figure>
+                <img src="./assets/img/6-min.png" class="img-responsive">
+          <button onclick="info5()" id="learn_more">Learn More</button>                
+        </figure>
+                    <img src="./assets/img/8-min.png" class="img-responsive">
+              <button onclick="info6()" id="learn_more">Learn More</button>                    
+            </figure>
                     <figure> 
-                      <img src="./assets/img/9.png" class="img-responsive">
-                <button id="learn_more">Learn More</button>                      </figure>
-                          <img src="./assets/img/11.png" class="img-responsive">
-                    <button id="learn_more">Learn More</button>                          </figure>
+                      <img src="./assets/img/9-min.png" class="img-responsive">
+                <button onclick="info7()" id="learn_more">Learn More</button>                      
+              </figure>
+                          <img src="./assets/img/11-min.png" class="img-responsive">
+                    <button onclick="info8()" id="learn_more">Learn More</button>                          
+                  </figure>
                           <figure> 
-                            <img src="./assets/img/12.png" class="img-responsive">
-                      <button id="learn_more">Learn More</button>                            </figure>
+                            <img src="./assets/img/12-min.png" class="img-responsive">
+                      <button onclick="info9()" id="learn_more">Learn More</button>                            
+                    </figure>
                             <figure> 
-                              <img src="./assets/img/13.png" class="img-responsive">
-                        <button id="learn_more">Learn More</button>                              </figure>
+                              <img src="./assets/img/13-min.png" class="img-responsive">
+                        <button onclick="info10()" id="learn_more">Learn More</button>                              
+                      </figure>
+                      <figure> 
+                        <img src="./assets/img/14-min.png" class="img-responsive">
+                  <button onclick="info10()" id="learn_more">Learn More</button>                              
+                </figure>
 
     </div>
 
@@ -148,7 +162,8 @@
 </section>
 
 <section class="footer">
-  <img src="./assets/svg/death-star-white.svg">
+  <a href="https://kolatof.eu">
+  <img src="./assets/svg/death-star-white.svg"></a>
   <a href="https://lego.com"><h3>All Photos Are Property of Their Respective Owners</h3></a><br>
   <h3>Follow Us On Social Media</h3><br>
   <a href="#!"><i class="fab fa-instagram"></i></a>
@@ -161,6 +176,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
   <script  src="./assets/js/script.js"></script>
+  <script src="./assets/js/functions.js"></script>
 
 </body>
 </html>

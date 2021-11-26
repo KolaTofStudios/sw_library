@@ -31,7 +31,7 @@ $(".close").click(function(){
 });
 
 $("#answer1").click(function(){
-  swal("Good job!", "You answered correctly!", "success", {button: "Next Question",});
+  swal("Terrible job!", "You failed miserably!", "error", {button: "Retry",});
 });
 
 $("#answer").click(function(){
@@ -43,7 +43,7 @@ $("#answer2").click(function(){
 });
 
 $("#answer3").click(function(){
-  swal("Terrible job!", "You failed miserably!", "error", {button: "Retry",});
+  swal("Good job!", "You answered correctly!", "success", {button: "Next Question",});
 });
 
 
@@ -54,7 +54,15 @@ const numStars = 3500;
 // namira random koordinati
 function getRandomPosition() {  
   var y = $('html').width();
-  var x = $('body').height()*1.8;
+  var x = $('body').height();
+
+  if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+    var x = $('body').height()*1.7;
+    console.log("firefox")
+  }else{
+    console.log("chromium")
+  }
+
     var randomX = Math.floor(Math.random()*x);
     var randomY = Math.floor(Math.random()*y);
     return [randomX,randomY];
